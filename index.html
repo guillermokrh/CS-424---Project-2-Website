@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#description">Description</a>
+              <a class="nav-link js-scroll-trigger" href="#description">Progress</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#data">Data</a>
@@ -65,7 +65,6 @@
               <h1 class="mb-5"><strong>Learning to Fly is a data visualization project of airport flight data in Chicago.</strong></h1>
             </div>
         </div>
-        <img src="img/outbreak/p1.rojashernandez.guillermo.jpeg" height="430" width="900">
       </div>
       </section>
     <!--</header>-->
@@ -75,20 +74,25 @@
     <section class="description" id="description">
       <div class="container">
         <div class="row">
-            <h2 class="section-heading">Description</h2>
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/4wWxHPOlERI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <p>This application can be used to look at airport flight data.</p>
-            <p>To use the application, open the application in your browser, or download the files and load them into R Studio</p>
-            <p>You can look at the application online at <a style="color: blue" href= "https://grojas5-project1.shinyapps.io/18p1data/">this link</a>
-              or you can download the files <a style="color: blue" href="https://guillermokrh.github.io/cs424-project1-about/files/project1_files.zip">here</a></p>
-            <p>In the application, you can look at the different statistics on cholera deaths in London, compared to cholera deaths in Naples, and population data from the latest UK Census at the time.</p>
-            <p>The application also provides a Leaflet map that maps the locations of the cholera deaths on a map of London, and shows the proximity to the water pumps at the time.</p>
+            <h2 class="section-heading">Progress</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto" style="flex: 0 0 100%;">
+            <p><strong>Weekly Summary: Feb 24, 2018</strong></p>
+            <p>Guillermo Rojas Hernandez progress: This week I focused on customizing the base template for the main Learning to Fly web page,
+              and creating the base Shiny script and first visualizations for the Shiny application for Project 2.
+            </p>
+            <p>Yang Hao progress:  This week I focused on working with the data set using R.  An overview of my work is in
+              <a href="pages/yang_hao_update_02-23-18.html">this webpage</a></p>
+            <p>Natasha Rice progress:  This week I focused on downloading the data, cleaning up the data set, setting up the project on
+              GitHub, and doing some of the initial R work on the dataset.</p>
+            <p>Siddarth Basu progress:  This week I focused on learning more about the Shiny dashboard, coming up with ideas for the
+              dashboard visualization, and doing some R work on the dataset.</p>
+          </div>
         </div>
         <br>
-        <h3><strong>Implementation Details</strong></h3>
+        <!--<h3><strong>Implementation Details</strong></h3>
         <div class="row">
-          <!--<div class="col-lg-4 my-auto">
-          </div>-->
           <div class="col-lg-8 my-auto" style="flex: 0 0 100%; max-width: 100%;">
             <div class="container-fluid">
               <div class="row">
@@ -125,7 +129,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
 
       </div>
     </section>
@@ -136,16 +140,13 @@
           <div class="col-lg-8 mx-auto" style="flex: 0 0 100%;">
             <h2 class="section-heading">Data</h2>
             <p>The data utilized was chosen by the professor of the course, Dr. Andy Johnson.</p>
-            <p>It included data on the date and location of cholera outbreak deaths and attacks, and data on the
-              population of the UK at the time, and comparative statistics to cholera deaths in Naples.</p>
-            <p>For the application, I created bar charts and pie charts using the ggplot library once the data was processed into R Studio.</p>
+            <p>For the application, we created bar charts and pie charts using the ggplot library once the data was processed into R Studio.</p>
           </div>
         </div>
 
-        <div class="row">
+        <!--<div class="row">
           <div class="col-lg-4 my-auto">
             <div class="device-container">
-              <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
               <img src="img/outbreak/cholera_deaths_csv.png" class="img-fluid" alt="">
             </div>
           </div>
@@ -161,7 +162,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
         <br>
 
       </div>
@@ -173,14 +174,6 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading">Insights</h2>
-            <p>Overall the data visualization does support John Snow's belief that the water pump on Broad Street
-            caused the cholera outbreak.  On the leaflet map that was created, the locations of the deaths all surround
-            the Broad Street pump, and do not form a similar pattern around the other pumps.</p>
-            <img src="img/outbreak/leaflet.png" alt="">
-            <p><br>Additionally, from the line chart, it is obvious that there was a single incident around September 1st
-              that caused the majority of the cholera deaths.  If it had been multiple water pumps that were contaminated,
-              there might have been multiple large spikes in deaths, as opposed to one large spike.</p>
-            <img src="img/outbreak/attacks_and_deaths.png" alt="">
           </div>
         </div>
       </div>

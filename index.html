@@ -50,8 +50,12 @@
               <a class="nav-link js-scroll-trigger" href="#insights">Insights</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#interestingFeedback">Thoughts</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Authors</a>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -222,14 +226,28 @@
             <h2 class="section-heading">Data</h2>
             <p>The data utilized was chosen by the professor of the course, Dr. Andy Johnson.</p>
             <p>For the application, we created bar charts and pie charts using the ggplot library once the data was processed into R Studio. </p>
-              <p>Steps to follow:</p>
+              <p>Manipulation of Data:</p>
               <ul>
-                  <li>The data was cleaned and reduced by python script</li>
-                  <li>Created the percent() and switch_hour() functions.</li>
-                  <li>Finished 5 different tables of data for the Shiny dashboard.</li>
-                  <li>Made the dashboard reactive to the hour format and the selected airport and month.</li>
-                  <li>Screenshots of the tables I created can be found in <a href="pages/yang_hao_update_03-02-18.pdf">this PDF.</a></li>
+                  <li>The data was cleaned and reduced by python script given by Professor Johnson. This script allowed us to turn CSV files to TSV files, with various lookup codes added. </li>
+                  <li>The data</li>
+                  <li>For the Intereseting Days section, we were given more freedom, so we choose date datas in which we were familiar with: Christmas, Thanksgiving, New Year's Day. These are occasions that would increase definetly require someone to take a flight. </li>
+                   <li>For the graduate section, an additional data set was taken from the Bureau of Transporation Statistics, Datasets, in which the data is presented the same way as Professor Johnson, but further more variables like pasanger, distance, class, etc. This gave us a wide range of possible implementations of this data and how we can merge them into our project. </li>
+                
               </ul>
+            
+              <h3>Libraries used:</h3>
+              <li>Shiny/ShinyDashboard</li>
+              <li>ggplot2</li>
+              <li>lubridate</li>
+              <li>DT/data.table</li>
+              <li>dplyr</li>
+              <li>plotly</li>
+              <li>jpeg</li>
+              <li>leaflet</li>
+              <li>fasttime</li>
+              <li>ggridges</li>
+              <li>ggrepel</li>
+              <p></p>
           </div>
         </div>
 
@@ -255,7 +273,8 @@
         <br>
 
       </div>
-    </section>
+    
+      
 
 
     <section class="insights text-center" id="insights">
@@ -263,32 +282,88 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading">Insights on How to Use</h2>
-              <p>The data utilized was chosen by the professor of the course, Dr. Andy Johnson.</p>
-            <p>For the application, we created bar charts and pie charts using the ggplot library once the data was processed into R Studio.</p>
-            <p>Steps to follow:</p>
+        
               <ul>
-                  <img src="img/menu.png" > 
+                  <h4>Below is the menu system we have made to organize our tabs</h4>
+                  <img src="img/mainMenu.png"> 
+                  <p></p>
                   
-                  <li>The application is broken into 6 sub menu system</li>
-                  <li>Created the percent() and switch_hour() functions.</li>
-                  <li>Finished 5 different tables of data for the Shiny dashboard.</li>
-                  <li>Made the dashboard reactive to the hour format and the selected airport and month.</li>
-                  <li>Screenshots of the tables I created can be found in <a href="pages/yang_hao_update_03-02-18.pdf">this PDF.</a></li>
+                  <li>The application is broken into 10 sub menu system with two items: About and Settings</li>
+                  <li>You click on the given menu tag you desire and must choose month or airport to visualize</li>
+                  <li>Each menu allows you create premises that you can choose from: Airport, Time, type of sort</li>
+              
               </ul>
+              <p></p>
+                
+                <img src="img/top_selector.png">
+              <p></p>
+              
+              <h3>Example#1: Find all the given flights in a choosen date with delay data</h3>
+              <li>This requires us to be able to filter through multiple days, we should click on explore dates </li>
+              <li>The top of the page, there is date tab in which you enter the date in 2017 (Calender style)</li>
+              <p></p>
+              
+              <img src="img/dateChange.png">
+              <p></p>
+              <li>The date entered, 2 bar graphs and 2 heat maps should render which give hourly data of flights</li>
+              <li>The date is an hourly break down for the date specificed and be able to see both aiports.</li>
+              <p></p>
+              <img src="img/hourlyBreakDown.png">
+              
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              
+               <h3>Example#2: Find Arrivals and Departures for both airports (Hourly/Monthly). </h3>
+              <p></p>
+              <li>First lets locate the Arrivals and Departures which will bring up to monthly updates  </li>
+              <li>The top of the page, there is month tab which lets you choose from (1-12)</li>
+              <li>After choosing your specified month, the tables and bar graphs change to that data. </li>
+              <p></p>
+              
+              <img src="img/example2table.png">
+              <p></p>
+              <li>We have a side to side comparison with ORD and Midway which gives the user more options</li>
+              <li>Now we can see arrivals and departures for both Illinois airports with clarity (Hourly).</li>
+              <p></p>
+              <img src="img/example2graphs.png">
+              <p></p>
+              <li>If we want to see a month to month comparison, there is a tab on top, which allows us to switch to month to month comparison  </li>
+              <p></p>
+              <img src="img/heatmapExam2.png">
           </div>
         </div>
       </div>
     </section>
     
-    <!--<section class="cta">
-      <div class="cta-content">
-        <div class="container">
-          <h2>Stop waiting.<br>Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
-        </div>
+    </section>
+      <section class="contact bg-primary" id="interestingFeedback">
+      <div class="container">
+        <h2> Interesting Thoughts:</h2>
+        <ul class="list-inline list-social">
+        <p></p>
+        <li></li>
+            <h4>Thought#1</h4>
+        <li>When looking at the US heatmaps comparing arrivals and departures, the data is consistent on both sides and almost completely similar. We were very confused in this data, but then came to the conclusion that these are regular flyers who are also doing a return trip back to their state. We also took into consideration that people that buy airline tickets, typically also buy a return ticket. It is on very rare occasions, where someone will just buy a one way ticket. </li>   
+        <p></p>
+            <img src="img/mapsCompared.png">
+        <p></p>
+            <h4>Thought#2</h4>
+        <li>Another interesting data set we discovered was when we are doing a comparison of airline flights in a given month comparing with ORD and Midway. Looking at the airline: Atlantic Southwest Airlines only have flights at Midway half the year. We are baffled as a group where it is very strange that an airline is only active certain periods of the year. </li>
+            <p></p>
+            <img src="img/asa_logo.png">
+            <p></p>
+            <img src="img/flights_in_month.png">
+            <p></p>
+            <img src="img/ohare_atlantic.png">
+        <p></p>
+        <li>Further diving into the ASA's revenue in 2017 peaked at 93 million, compared to United Airline which is a giant, their revenue neted around 37 billion. So we came to the conclusion that it is a much smaller airline company, with much less comercial planes than their competitors. However what threw us off further was seeing that ASA has a high volume of flights in O'hare. Also, Airlines like American or United dont even have flights in Midway. This means that ASA is not alone to blame for inconsistent flights in a year at Midway, but also because Midway is a much smaller airport, with less runways, and a combination of ASA's small stature and Midway's size are the main reason for this graph.  </li>
+        <p></p>
+            
+        <h4>Thought#3</h4>
+        </ul>
       </div>
-      <div class="overlay"></div>
-    </section>-->
+    </section>
 
     <section class="contact bg-primary" id="contact">
       <div class="container">
